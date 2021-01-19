@@ -1,0 +1,16 @@
+.footer{
+    margin-top: 4rem;
+    background-image: linear-gradient(to left top, #ffb2ff, #e892f1, #d073e4, #b653d8, #9932cc);
+    box-shadow: 0px 0px 5px rgba(#9932cc,0.7);
+    
+    &-inner{
+        padding: 1rem 0.5rem;
+        @include maxWidth;
+        
+        h2{
+            font-style: italic;
+            text-align: center;
+        }
+    
+    }
+}

@@ -1,21 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,700;0,900;1,900&display=swap");
 
+$color-main-1: #ffb2ff;
+$color-main-2: #db72ff;
+$color-main-3: #9932cc;
 
-$color-main-1:#FFB2FF;
-$color-main-2:#DB72FF;
-$color-main-3:#9932CC;
-
-$color-dark-1:#101010;
-$color-dark-2:#242424;
+$color-dark-1: #101010;
+$color-dark-2: #242424;
 $color-dark-3: #363636;
-$color-dark-4:#4D4F54;
-$color-dark-5:#656565;
+$color-dark-4: #4d4f54;
+$color-dark-5: #656565;
 $color-white: #fafaff;
-
 
 $mediumSize: 776px;
 
-$max-width:1000px;
+$max-width: 1000px;
 
 *,
 *::after,
@@ -24,7 +22,8 @@ $max-width:1000px;
     padding: 0;
     box-sizing: border-box;
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
 
@@ -32,21 +31,20 @@ body {
     height: 100vh;
     font-family: "Nunito", sans-serif;
 }
-main{
+
+main {
     overflow: hidden;
     display: grid;
     grid-template-rows: auto 1fr auto;
     min-height: 100vh;
 }
 
-
-@mixin maxWidth{
+@mixin maxWidth {
     max-width: $max-width;
     margin: 0 auto;
 }
 
-
-@mixin link{
+@mixin link {
     text-decoration: none;
     color: $color-dark-1;
     font-family: inherit;
@@ -58,6 +56,23 @@ main{
     }
 }
 
+.goToTop {
+    display: none;
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 50px;
+    right: 100px;
+    background-color: transparent;
+    cursor: pointer;
+    opacity: 0;
+    outline: transparent;
+    border-radius: 0.3rem;
+    transition: opacity 0.4s;
+    border: 2px solid rgba(#000, 0.5);
+    font-size: 2rem;
 
-
-
+    @include mediumMq() {
+        display: initial;
+    }
+}
