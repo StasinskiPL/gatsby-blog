@@ -1,0 +1,51 @@
+.postPage {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  @include mediumMq {
+    margin-top: 4rem;
+  }
+  &-inner {
+    @include maxWidth;
+    width: 100%;
+    display: grid;
+    @include mediumMq {
+      grid-template-columns: 1fr 250px;
+      gap: 1rem;
+    }
+  }
+
+  &-context {
+    position: relative;
+    p{
+        white-space: pre-wrap;
+    }
+  }
+
+  &-date {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0.5rem;
+    background-color: rgba(#fff, 0.5);
+  }
+
+  &-title {
+    margin: 2rem 0;
+    font-size: 2rem;
+  }
+  h2{
+      font-size: 1.875rem;
+  }
+  h3{
+      font-size: 1.5rem;
+  }
+  h4{
+      font-size: 1.25rem;
+  }
+  h5{
+      font-size: 1rem;
+  }
+  p{
+      font-size: 1.25rem;
+  }
+}

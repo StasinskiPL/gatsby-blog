@@ -1,0 +1,58 @@
+.posts {
+  width: 100%;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  @include mediumMq {
+    margin-top: 4rem;
+  }
+
+  &-inner {
+    @include maxWidth;
+    width: 100%;
+    display: grid;
+    @include mediumMq {
+      grid-template-columns: 1fr 250px;
+      gap: 1rem;
+    }
+  }
+}
+
+.post {
+    position: relative;
+    margin: 2rem 0;
+    transition: background-color 0.3s ;
+    &:hover{
+        background-color: #efefef;
+    }
+  &-inner {
+      @include link;
+      display: block;
+  }
+  &-image {
+    max-height: 400px;
+  }
+  &__info{
+      display: flex;
+      flex-direction: column;
+      padding: 0.5rem;
+     &-title{
+         margin-bottom: 0.5rem;
+     }
+  }
+  &-btn{
+      background-color: transparent;
+      padding: 0.75rem;
+      border: transparent;
+      font-family: inherit;
+      align-self: flex-end;
+      font-size: 1.25rem;
+      cursor: pointer;
+  }
+  &-date{
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 0.5rem;
+      background-color: rgba(#fff, 0.5);
+  }
+}
