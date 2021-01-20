@@ -3,6 +3,8 @@ import React from "react";
 const GoToTopBtn = () => {
   const btn = React.useRef(null);
 
+  if(typeof window !== `undefined`){
+
   window.addEventListener("scroll", () => {
     if (
       document.body.scrollTop >= 200 ||
@@ -19,6 +21,8 @@ const GoToTopBtn = () => {
       }
     }
   });
+};
+
 
   return (
     <button ref={btn} className="goToTop" onClick={() => window.scrollTo(0, 0)}>
