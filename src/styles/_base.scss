@@ -1,8 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,700;0,900;1,900&display=swap");
 
-$color-main-1: #ffb2ff;
-$color-main-2: #db72ff;
-$color-main-3: #9932cc;
 
 $color-dark-1: #101010;
 $color-dark-2: #242424;
@@ -11,7 +8,7 @@ $color-dark-4: #4d4f54;
 $color-dark-5: #656565;
 $color-white: #fafaff;
 
-$mediumSize: 776px;
+$mediumSize: 840px;
 
 $max-width: 1000px;
 
@@ -67,6 +64,7 @@ main {
     cursor: pointer;
     opacity: 0;
     outline: transparent;
+    pointer-events: none;
     border-radius: 0.3rem;
     transition: opacity 0.4s;
     border: 2px solid rgba(#000, 0.5);

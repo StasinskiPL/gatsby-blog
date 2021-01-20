@@ -1,8 +1,9 @@
 .navbar {
     background-image: linear-gradient(to right bottom, #ffb2ff, #e892f1, #d073e4, #b653d8, #9932cc);
+    background-image: linear-gradient(to left top, #73c2fb, #35a1f5, #007eeb, #0058db, #192bc2);
     width: 100%;
     z-index: 10;
-    box-shadow: 0px 2px 5px rgba(#9932cc,0.7);
+    box-shadow: 0px 2px 5px rgba(#0058db,0.7);
 
 
     &-inner {

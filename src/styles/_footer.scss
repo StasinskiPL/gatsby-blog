@@ -1,8 +1,7 @@
 .footer{
     margin-top: 4rem;
-    background-image: linear-gradient(to left top, #ffb2ff, #e892f1, #d073e4, #b653d8, #9932cc);
-    box-shadow: 0px 0px 5px rgba(#9932cc,0.7);
-    
+    background-image: linear-gradient(to right bottom, #73c2fb, #35a1f5, #007eeb, #0058db, #192bc2);
+    box-shadow: 0px 0px 5px rgba(#007eeb,0.7);
     &-inner{
         padding: 1rem 0.5rem;
         @include maxWidth;

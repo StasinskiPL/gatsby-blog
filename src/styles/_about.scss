@@ -1,0 +1,43 @@
+.about {
+    &-inner {
+        @include maxWidth;
+        padding: 3rem 0.5rem;
+        display: grid;
+        gap: 2rem;
+
+        @include mediumMq {
+            padding: 10rem 1.5rem;
+            grid-template-columns: 1fr auto;
+        }
+    }
+
+    &-info {
+        padding: 0.5rem;
+        @include mediumMq {
+            order: 0;
+        }
+        h1{
+            text-transform: uppercase;
+            font-size: 2.5rem;
+            font-style: italic;
+            border-bottom: 1px solid rgba(#444,0.4);
+            margin-bottom: 1rem;
+        }
+        p{
+                font-size: 1.5rem;
+                @include mediumMq{
+                padding-right: 3rem;
+                }
+        }
+
+    }
+
+    &-image {
+        justify-self: center;
+        border-radius: 50%;
+
+        @include mediumMq {
+            order: 1;
+        }
+    }
+}

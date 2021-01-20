@@ -8,12 +8,14 @@ const GoToTopBtn = () => {
       document.body.scrollTop >= 200 ||
       document.documentElement.scrollTop >= 200
     ) {
-      if (btn) {
+      if (btn.current) {
         btn.current.style.opacity = "1";
+        btn.current.style.pointerEvents = "auto";
       }
     } else {
-      if (btn) {
+      if (btn.current) {
         btn.current.style.opacity = "0";
+        btn.current.style.pointerEvents = "none";
       }
     }
   });

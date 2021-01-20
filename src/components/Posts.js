@@ -1,6 +1,6 @@
 import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
-import Banner from "./Banner"
+import Aside from "./Aside"
 import Post from "./Post";
 
 const Posts = () => {
@@ -11,7 +11,7 @@ const Posts = () => {
           <div className="posts-list-wrapper">
           {posts.map((post,index)=><Post key={index} post={post}/>)}
           </div>
-          <Banner/>
+          <Aside/>
           
       </div>
     </section>
